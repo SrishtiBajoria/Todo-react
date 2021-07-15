@@ -76,7 +76,9 @@ const Signup = () => {
                 registerUser({ name, email, password });
               }}
             >
+              <a href="/">
               Sign Up
+              </a>
             </button>
             <p>
               Already have a account.? <a href="/">Login</a>
