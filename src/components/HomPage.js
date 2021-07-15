@@ -17,7 +17,7 @@ const HomePage = () => {
   const createTask = async (formData) => {
     try {
       const res = await axios.post(
-        "https://todo-api-srishti.herokuapp.com/",
+        "https://todo-api-srishti.herokuapp.com/api/task/create-task",
         formData,
         config
       );
@@ -29,7 +29,7 @@ const HomePage = () => {
 
   const getTasks = async () => {
     try {
-      const res = await axios.get("https://todo-api-srishti.herokuapp.com/", config);
+      const res = await axios.get("https://todo-api-srishti.herokuapp.com/api/task/all", config);
       setTasks(res.data);
     } catch (error) {
       console.log(error.message);
@@ -48,7 +48,7 @@ const HomePage = () => {
   const updateTask = async (id, formData) => {
     try {
       const res = await axios.put(
-        "https://todo-api-srishti.herokuapp.com/" + id,
+        "https://todo-api-srishti.herokuapp.com/api/task/update" + id,
         formData,
         config
       );
@@ -62,7 +62,7 @@ const HomePage = () => {
   const deleteTask = async (id) => {
     try {
       const res = await axios.delete(
-        "https://todo-api-srishti.herokuapp.com/" + id,
+        "https://todo-api-srishti.herokuapp.com/api/task/delete" + id,
         config
       );
       // setTasks(res.data);

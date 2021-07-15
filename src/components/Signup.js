@@ -12,7 +12,7 @@ const Signup = () => {
     console.log("form data", formData);
     try {
       const res = await axios.post(
-        "https://todo-api-srishti.herokuapp.com/",
+        "https://todo-api-srishti.herokuapp.com/api/user/register",
         formData,
         config
       );
