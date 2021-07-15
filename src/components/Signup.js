@@ -76,8 +76,8 @@ const Signup = () => {
                 registerUser({ name, email, password });
               }}
             >
+                Sign Up
               <a href="/">
-              Sign Up
               </a>
             </button>
             <p>
