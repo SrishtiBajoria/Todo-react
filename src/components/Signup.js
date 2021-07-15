@@ -74,11 +74,11 @@ const Signup = () => {
               type="button"
               onClick={() => {
                 registerUser({ name, email, password });
+                window.location.href="/";
               }}
             >
-                Sign Up
-              <a href="/">
-              </a>
+             Sign Up
+     
             </button>
             <p>
               Already have a account.? <a href="/">Login</a>
